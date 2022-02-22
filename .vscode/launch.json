@@ -1,0 +1,81 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "getTodoLambdaFunction",
+      "type": "node",
+      "request": "attach",
+      "address": "localhost",
+      "port": 5858,
+      "localRoot": "${workspaceFolder}/.aws-sam/build/getTodoLambdaFunction",
+      "remoteRoot": "/var/task",
+      "protocol": "inspector",
+      "stopOnEntry": false,
+      "outFiles": [
+        "${workspaceFolder}/.aws-sam/build/getTodoLambdaFunction/**/*.js"
+      ],
+      "sourceMaps": true,
+      "skipFiles": [
+        "/var/runtime/**/*.js",
+        "<node_internals>/**/*.js"
+      ]
+    },
+    {
+      "name": "createTodoLambdaFunction",
+      "type": "node",
+      "request": "attach",
+      "address": "localhost",
+      "port": 5858,
+      "localRoot": "${workspaceFolder}/.aws-sam/build/createTodoLambdaFunction",
+      "remoteRoot": "/var/task",
+      "protocol": "inspector",
+      "stopOnEntry": false,
+      "outFiles": [
+        "${workspaceFolder}/.aws-sam/build/createTodoLambdaFunction/**/*.js"
+      ],
+      "sourceMaps": true,
+      "skipFiles": [
+        "/var/runtime/**/*.js",
+        "<node_internals>/**/*.js"
+      ]
+    },
+    {
+      "name": "updateTodoLambdaFunction",
+      "type": "node",
+      "request": "attach",
+      "address": "localhost",
+      "port": 5858,
+      "localRoot": "${workspaceFolder}/.aws-sam/build/updateTodoLambdaFunction",
+      "remoteRoot": "/var/task",
+      "protocol": "inspector",
+      "stopOnEntry": false,
+      "outFiles": [
+        "${workspaceFolder}/.aws-sam/build/updateTodoLambdaFunction/**/*.js"
+      ],
+      "sourceMaps": true,
+      "skipFiles": [
+        "/var/runtime/**/*.js",
+        "<node_internals>/**/*.js"
+      ]
+    },
+    {
+      "name": "deleteTodoLambdaFunction",
+      "type": "node",
+      "request": "attach",
+      "address": "localhost",
+      "port": 5858,
+      "localRoot": "${workspaceFolder}/.aws-sam/build/deleteTodoLambdaFunction",
+      "remoteRoot": "/var/task",
+      "protocol": "inspector",
+      "stopOnEntry": false,
+      "outFiles": [
+        "${workspaceFolder}/.aws-sam/build/deleteTodoLambdaFunction/**/*.js"
+      ],
+      "sourceMaps": true,
+      "skipFiles": [
+        "/var/runtime/**/*.js",
+        "<node_internals>/**/*.js"
+      ]
+    }
+  ]
+}

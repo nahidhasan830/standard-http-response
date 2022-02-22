@@ -1,0 +1,48 @@
+{
+  "name": "aws-sam-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack-cli",
+    "clean": "rimraf .aws-sam .vscode",
+    "prebuild": "rimraf .aws-sam .vscode",
+    "prewatch": "rimraf .aws-sam .vscode",
+    "watch": "webpack-cli -w",
+    "start": "sam local start-api -p 5000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.50.0",
+    "@aws-sdk/lib-dynamodb": "^3.50.0",
+    "@lambda-middleware/class-validator": "^2.0.1",
+    "@lambda-middleware/compose": "^1.2.0",
+    "@lambda-middleware/http-error-handler": "^2.0.0",
+    "@middy/core": "^2.5.7",
+    "@middy/http-error-handler": "^2.5.7",
+    "@middy/http-event-normalizer": "^2.5.7",
+    "@middy/http-json-body-parser": "^2.5.7",
+    "@middy/validator": "^2.5.7",
+    "aws-sdk": "^2.1072.0",
+    "class-transformer-validator": "^0.9.1",
+    "class-validator": "^0.13.2",
+    "dynamoose": "^2.8.5",
+    "http-errors": "^2.0.0",
+    "middy-middleware-json-error-handler": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.92",
+    "@types/aws-sdk": "^2.7.0",
+    "@types/http-errors": "^1.8.2",
+    "@types/node": "^17.0.16",
+    "@types/webpack": "^5.28.0",
+    "aws-sam-webpack-plugin": "^0.11.0",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.5",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
